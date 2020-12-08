@@ -26,20 +26,21 @@ class Search extends React.Component {
   render() {
     return (
       <div className="MainApp">
+
+        <div className="splash-text">Enter the common or scientific name of your plant below to find simple care instructions</div>
         
-        {/* <div className="nav-search-div">
+        <div className="nav-search-div">
               <input id="search" className="plant-search" type="search" onChange={this.update("input")} placeholder="Search for plants..." />
               <button className="search-btn" onClick={ this.handleSearch }><i className="fas fa-microphone micro"></i></button>
-          </div> */}
+        </div>
 
-        <div className="result-plant">
+        {/* <div className="result-plant">
           <div className="plant-pic"><a href="https://i.pinimg.com/originals/38/2a/ad/382aad040d3a8de15aab8f3e62e2b21a.jpg"></a></div>
           <div className="name-douple">
             <div className="name-common">Fishbone Cactus</div>
             <div className="name-sci">(Epiphyllum anguliger)</div>
           </div>
         </div>
-
 
         <div className="result"> 
           <div className="result-name">Light</div>
@@ -52,9 +53,6 @@ class Search extends React.Component {
             <div className="result-no">-</div>
             <div className="result-name">Full Sun</div>
           </div>
-          
-          
-
         </div>
          
         <div className="result">
@@ -68,7 +66,6 @@ class Search extends React.Component {
             <div className="result-no">-</div>
             <div className="result-name">Mud</div>
           </div>
-
         </div>
 
         <div className="result">
@@ -82,7 +79,7 @@ class Search extends React.Component {
             <div className="result-no">-</div>
             <div className="result-name">Swamp</div>
           </div>
-        </div>
+        </div> */}
           
           
           
