@@ -10,8 +10,11 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="NavBar">
-        <div className="left"><i class="fas fa-home"></i></div>
-        <div className="right"></div>
+        <div className="nav-douple">
+          <div className="left"><i class="fas fa-home"></i></div>
+          <div className="right"></div>
+        </div>
+        <div className="bar"></div>
       </div>
     );
   }

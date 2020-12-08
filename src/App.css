@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Oswald:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat&family=Oswald:wght@300&display=swap');
 
 body {
   margin: 0;
@@ -16,14 +15,24 @@ body {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  background-color: #EDF1F7;
   width: 100vw;
   height: 100vh;
   max-width: 500px;
-  border: 1px solid black;
+  border: 1px solid light;
 }
 
 .NavBar {
   height: 10%;
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.nav-douple {
   width: 100%;
   /* margin-left: 10%; */
   /* margin-right: 10%;
@@ -33,7 +42,8 @@ body {
   justify-content: space-between;
   /* border: 1px solid blue; */
   align-items: center;
-  background-color: lightgray;
+  background-color: #EDF1F7;
+
   
 }
 
@@ -51,6 +61,15 @@ body {
   margin-right: 10%;
 }
 
+.bar {
+  width: 90%;
+  height: 5px;
+  background-color: #608D72;
+  margin-top: 5%;
+  border-radius: 4px;
+}
+
+
 .fa-home {
   height: 100%;
   width: 100%;
@@ -62,7 +81,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
   /* justify-content: center; */
   align-items: center;
 
@@ -104,27 +123,32 @@ body {
 }
 
 .plant-pic {
-  height: 60px;
+  height: 90px;
   width: 30%;
   background-image: url("https://i.pinimg.com/originals/38/2a/ad/382aad040d3a8de15aab8f3e62e2b21a.jpg");
   background-size: cover;
+  border-radius: 4px;
 }
 
 .name-douple {
   width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  padding-left: 30px;
 }
 
 .name-common {
-  padding-top: 4px;
+  padding-top: 14px;
   font-size: 24px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 600;
 }
 
 .name-sci {
   font-style: italic;
   padding-top: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .result {
@@ -134,6 +158,12 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 10%;
+}
+
+.result-name {
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .result-range {

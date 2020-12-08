@@ -35,8 +35,8 @@ class Search extends React.Component {
         <div className="result-plant">
           <div className="plant-pic"><a href="https://i.pinimg.com/originals/38/2a/ad/382aad040d3a8de15aab8f3e62e2b21a.jpg"></a></div>
           <div className="name-douple">
-            <div className="name-common">normal name</div>
-            <div className="name-sci">(science name)</div>
+            <div className="name-common">Fishbone Cactus</div>
+            <div className="name-sci">(Epiphyllum anguliger)</div>
           </div>
         </div>
 
