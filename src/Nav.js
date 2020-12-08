@@ -10,8 +10,8 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="NavBar">
-        <div>logo left</div>
-        <div>login right</div>
+        <div className="left"><i class="fas fa-home"></i></div>
+        <div className="right"></div>
       </div>
     );
   }

@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Oswald:wght@300&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -5,34 +18,143 @@
   align-content: center;
   width: 100vw;
   height: 100vh;
+  max-width: 500px;
   border: 1px solid black;
 }
 
 .NavBar {
-  height: 20%;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-left: 10%;
+  height: 10%;
+  width: 100%;
+  /* margin-left: 10%; */
+  /* margin-right: 10%;
+  padding-left: 10%; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   align-items: center;
   background-color: lightgray;
   
 }
 
+.left {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  margin-left: 10%;
+}
+
+.right {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  margin-right: 10%;
+}
+
+.fa-home {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
 .MainApp {
-  height: 20%;
-  width: 80%;
+  height: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border: 1px solid violet;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 
+
 }
+
+.nav-search-div {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-top: 10%;
+}
+
+.plant-search {
+  margin-bottom: 0px;
+
+}
+
+.search-btn {
+  height: 30px;
+  width: 30px;
+  color: blue;
+  margin-left: 20px;
+}
+
+
+
+.input {
+  -webkit-appearance: none;
+}
+
+.result-plant {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.plant-pic {
+  height: 60px;
+  width: 30%;
+  background-image: url("https://i.pinimg.com/originals/38/2a/ad/382aad040d3a8de15aab8f3e62e2b21a.jpg");
+  background-size: cover;
+}
+
+.name-douple {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-common {
+  padding-top: 4px;
+  font-size: 24px;
+}
+
+.name-sci {
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.result {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.result-range {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 10%;
+}
+
+.result-yes {
+  font-weight: 900;
+  font-size: 24px;
+  color: green;
+}
+
+.result-no {
+  font-weight: 600;
+  color: maroon;
+}
+
+
 
 .App-logo {
   height: 40vmin;

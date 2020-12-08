@@ -25,12 +25,67 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div className="MainApp">Search for a plant
-        <div>search input</div>
-        <div className="nav-search-div">
-              <input id="search" className="plant-search" type="search" onChange={this.update("input")} placeholder="Search for plants.." />
+      <div className="MainApp">
+        
+        {/* <div className="nav-search-div">
+              <input id="search" className="plant-search" type="search" onChange={this.update("input")} placeholder="Search for plants..." />
               <button className="search-btn" onClick={ this.handleSearch }><i className="fas fa-microphone micro"></i></button>
+          </div> */}
+
+        <div className="result-plant">
+          <div className="plant-pic"><a href="https://i.pinimg.com/originals/38/2a/ad/382aad040d3a8de15aab8f3e62e2b21a.jpg"></a></div>
+          <div className="name-douple">
+            <div className="name-common">normal name</div>
+            <div className="name-sci">(science name)</div>
           </div>
+        </div>
+
+
+        <div className="result"> 
+          <div className="result-name">Light</div>
+          <div className="result-range">
+            <div className="result-name">Shade</div>
+            <div className="result-no">-</div>
+            <div className="result-no">-</div>
+            <div className="result-yes">l</div>
+            <div className="result-yes">l</div>
+            <div className="result-no">-</div>
+            <div className="result-name">Full Sun</div>
+          </div>
+          
+          
+
+        </div>
+         
+        <div className="result">
+          <div className="result-name">Soil Water Retention</div>
+          <div className="result-range">
+            <div className="result-name">Sand</div>
+            <div className="result-yes">l</div>
+            <div className="result-yes">l</div>
+            <div className="result-no">-</div>
+            <div className="result-no">-</div>
+            <div className="result-no">-</div>
+            <div className="result-name">Mud</div>
+          </div>
+
+        </div>
+
+        <div className="result">
+          <div className="result-name">Humidity</div>
+          <div className="result-range">
+            <div className="result-name">Desert</div>
+            <div className="result-yes">l</div>
+            <div className="result-yes">l</div>
+            <div className="result-no">-</div>
+            <div className="result-no">-</div>
+            <div className="result-no">-</div>
+            <div className="result-name">Swamp</div>
+          </div>
+        </div>
+          
+          
+          
       </div>
     );
   }
