@@ -6,16 +6,52 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: ""
+      input: "",
+      results: <div className="result"></div>
+    }
+
+    if (this.props.results) {
+      handleResults(this.state.results);
     }
   }
 
-  // handleSearch(e) {
+  handleResults(results) {
+    output = [];
+    /// get to individual results
+    results.forEach( result => {
+      /// do things to result, present small info; attach light/soil/humidity for show page
 
-  //       e.preventDefault();
-  //       console.log(this.state.input);
-  //       return this.state.input;
-  //   }
+      output.push(result);
+    });
+    return (
+      <div className="result">
+        {output}
+      </div>
+    )
+  }
+  
+
+  handleSearch(e) {
+
+    e.preventDefault();
+
+        
+    (async () => {
+      /// search for item
+      const response = await fetch(`https://trefle.io/api/v1/plants/search?token=AvrKtAWNyGzoT-belOOcCbon_aj1yxiEgrAOt0e1Hlg&q=this.state.input`);
+      /// get it back
+      const json = await response.json();
+      /// do things to it
+      /// send to search with results in props
+      this.props.history.push({
+        pathname: '/',
+        search: '?query=abc',
+        data: { json }
+      })
+      console.log(json);
+    })();
+;
+    }
 
   update(field) {
         return e => this.setState({
@@ -34,52 +70,7 @@ class Search extends React.Component {
               <button className="search-btn" onClick={ this.handleSearch }><i className="fas fa-microphone micro"></i></button>
         </div>
 
-        {/* <div className="result-plant">
-          <div className="plant-pic"><a href="https://i.pinimg.com/originals/38/2a/ad/382aad040d3a8de15aab8f3e62e2b21a.jpg"></a></div>
-          <div className="name-douple">
-            <div className="name-common">Fishbone Cactus</div>
-            <div className="name-sci">(Epiphyllum anguliger)</div>
-          </div>
-        </div>
-
-        <div className="result"> 
-          <div className="result-name">Light</div>
-          <div className="result-range">
-            <div className="result-name">Shade</div>
-            <div className="result-no">-</div>
-            <div className="result-no">-</div>
-            <div className="result-yes">l</div>
-            <div className="result-yes">l</div>
-            <div className="result-no">-</div>
-            <div className="result-name">Full Sun</div>
-          </div>
-        </div>
-         
-        <div className="result">
-          <div className="result-name">Soil Water Retention</div>
-          <div className="result-range">
-            <div className="result-name">Sand</div>
-            <div className="result-yes">l</div>
-            <div className="result-yes">l</div>
-            <div className="result-no">-</div>
-            <div className="result-no">-</div>
-            <div className="result-no">-</div>
-            <div className="result-name">Mud</div>
-          </div>
-        </div>
-
-        <div className="result">
-          <div className="result-name">Humidity</div>
-          <div className="result-range">
-            <div className="result-name">Desert</div>
-            <div className="result-yes">l</div>
-            <div className="result-yes">l</div>
-            <div className="result-no">-</div>
-            <div className="result-no">-</div>
-            <div className="result-no">-</div>
-            <div className="result-name">Swamp</div>
-          </div>
-        </div> */}
+        {this.state.results}
           
           
           
